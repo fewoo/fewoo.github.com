@@ -1,0 +1,14 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+/* rightsead */
+#rightsead{z-index: 1100;width:50px;height:200px;position:fixed; top:40%;right:0px;border-style:solid; border-width:0px;border-color:red;}
+*html #rightsead{margin-top:258px;position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+#rightsead li{width:50px;height:52px;border-style:solid;border-width:0px;border-color:blue;cursor:pointer;cursor:hand;}
+#rightsead li img{float:right;}
+#rightsead li div .shows{display:block;}
+#rightsead li div .hides{margin-right:-143px;}
+#rightsead li div.popPanel .hides{display:none;position:absolute;right:188px;top:0px;}
+#rightsead li div.popPanel .car{width:300px; height:100px;background-color:#faf7cd;}
+#rightsead li div.popPanel .im{width:80px; height:130px;}
+#imContent li {width:150px;height:25px;}
+#imContent li img{float:left;}

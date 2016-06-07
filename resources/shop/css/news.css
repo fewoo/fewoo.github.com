@@ -1,0 +1,44 @@
+/*新闻中心start*/
+
+.main .js-wrap .tab-list li {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    width: 20.5%;
+}
+.main .js-wrap .tab-list li {
+    position: relative;
+    display: table-cell;
+    padding: 6px 6px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.business-list .news-add div{
+	background:#fff;
+	padding:10px 10px;
+}
+.h1-news{
+	font-size:18px;
+}
+.news-p{
+	color:#949799;
+	padding:8px 0px;
+}
+.news-p .icon-add-zhong{
+	background:url(../../../images/icon.png);background-size:100%;
+	width:13px;
+	height:13px;
+	display:inline-block;
+	vertical-align: top;
+	margin-right:2px;
+}
+.news-content{
+	font-size:14px;
+	line-height:18px;
+}
+.js-tab-content div:hover{
+	background:#ccc;
+}	
+ 
+
+/*新闻中心end*/
+

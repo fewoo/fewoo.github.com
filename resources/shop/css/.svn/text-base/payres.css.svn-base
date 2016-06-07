@@ -1,0 +1,9 @@
+.pay-state-img{padding:0 10px;}
+.pay-state-img{height:99px;line-height:99px;border-bottom: 1px solid #e5e5e5;background: #fafff2;overflow: hidden;}
+.pay-state-img .ico{margin-right:13px;vertical-align: middle;}
+.pay-state-img span{display:inline-block;color:#71a91b;font-size:20px;line-height: 26px;vertical-align: middle;}
+.pay-state-txt .dl-list{padding:0;font-size:16px;}
+.pay-state-txt .dl-label{width:71px;padding-left:15px;color:#878787;line-height:50px;text-align:right;white-space: nowrap;}
+.pay-state-txt .dl-cnt{padding-left:86px;padding-right: 15px;color:#333;line-height: 50px;min-height:50px;border-bottom:1px solid #e5e5e5;background: #fff;}
+.pay-state-operate{padding:24px 10px;}
+.pay-state-operate a{width: 100%;margin:0;}

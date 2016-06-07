@@ -1,0 +1,65 @@
+.main .tab-list li{width:33.3333333%;}
+.main .tab-list a{border-right:none;}
+.card-main{display: none;}
+.card-line-void,.card-line-info{padding:0 10px;}
+.card-line-void{height:10px;background: #f4f4f4;}
+.card-line{border-bottom: 1px solid #e5e5e5;}
+.card-line .card-line-info{padding:0.375em 0.625em;position:relative;background:#fff;}
+.card-hd .card-line-info{padding-top:0;padding-bottom: 0;}
+
+.card-hd  .title{padding:0.9375em 0.5em 0.5em;}
+.card-hd  .info{font-size:0.875em;line-height:1.85714286;}
+.card-hd .aside{padding:0.3125em 0  0.125em;line-height:1.625em;color:#999;border-top: 1px solid #ff9400;}
+
+.card-hd .exchange-btn,.ico-piao,.ico-quan,.ico-yu{background-size: 366px 90px;background-image:url(../images/sprit-cards.png);}
+.card-hd .exchange-btn{position: absolute;top:15px;right:10px;width:85px;height:45px;}
+.uponShef-card .exchange-btn{background-position: 0 0;}
+.uponShef-card .exchange-btn.hover,.uponShef-card .exchange-btn:active{background-position: 0 -45px;}
+.coupons .exchange-btn{background-position: -85px 0;}
+.coupons .exchange-btn.active,.coupons .exchange-btn:active{background-position: -85px -45px;}
+.mess-card .exchange-btn{background-position: -170px 0;}
+.mess-card .exchange-btn.active,.mess-card .exchange-btn:active{background-position: -170px -45px;}
+.card-hd .aside span{font-size:0.875em;}
+.card-hd .aside span:nth-child(1){margin-right: 30px;}
+.card-hd .aside em{margin:0 10px 0 5px;font-style: normal;color:#ff9400;}
+/* 图标 */
+.ico-piao,.ico-quan,.ico-yu{width:37px;height:26px;}
+.ico-piao{background-position: -329px 0;}
+.ico-quan{background-position: -292px 0;}
+.ico-yu{background-position: -255px 0;}
+
+.card-line-info .card-module{display: table;width: 100%;table-layout: fixed;}
+.card-line-info .card-item{display: table-row;}
+.card-line-info .card-item-label,.card-line-info .card-item-info{display: table-cell;font-size:0.875em;color:#999;line-height: 1.5;}
+.coupons .card-line-info .card-item-info,.mess-card .card-line-info .card-item-info{color:#333;}
+.card-line-info .card-item-label{width:71px;}
+.card-line-info .uponShef-time{margin-right:10px;color:#333;}
+.card-line-info .uponShef-sum{display: inline-block;width:123px;color:#333;}
+.card-line-info .coupou-num,.card-line-info .messCard-num{margin:0 10px;font-size:1.14285714em;line-height:1.3125;color:#ff9400;}
+
+.convert-msd .card-line-info{padding-bottom: 0.625em;}
+.convert-msd .card-module{padding-bottom: 6px;}
+.convert-msd .card-item-label{width:93px;}
+.convert-msd .card-item-info{color:#333;}
+.convert-msd-operate{width:100%;padding-top:10px;border-top: 1px solid #e5e5e5;}
+.convert-msd-operate .btn{width:100%;height:30px;margin:0;font-size:1em;color:#ff9400;line-height:28px;border-color:#ff9400;box-shadow: none;}
+.convert-msd-operate .btn:active,.convert-msd-operate .btn-confirm{color:#fff5e8;background:#ff9400;outline: none;}
+.propt-window{display:none;height:auto;}
+.propt-window-1{margin-top: -119px!important;}
+.propt-window-2{margin-top: -139px!important;}
+.propt-window-hd {height: 50px;font-size:20px;color:#fff;text-align: center;line-height:50px;background:#72a81c;-webkit-user-select: none;-moz-user-select: none;}
+.propt-window-hd .ico-close{background-image: url(../images/slice/ico-close-white.png);}
+.propt-window-hd a:active{background: #88b347;}
+.propt-window-bd{padding-top: 12px;}
+.propt-form-item{padding:0 10px;}
+.propt-form-info{padding-bottom: 25px;}
+.propt-form-label{display:inline;float:left;width:25%;height:20px;padding:5px 0;font-size:16px;line-height: 20px;color:#6a7073;}
+.propt-form-label{display:inline;float:left;width:25%;height:20px;padding:5px 0;font-size:16px;line-height: 20px;color:#6a7073;}
+.propt-form-cnt{display:inline;float:left;width:75%;}
+.propt-form-item .propt-operate{padding:25px 0;border-top: 1px solid #e5e5e5;}
+.propt-form-item .propt-operate .btn-confirm{width:100%;margin:0;}
+.propt-form-cnt .input{width: 20.833333%;margin-left:4.166667%;text-align: center;}
+.propt-form-cnt .input.input-lg{display: block;width:95.833333%;text-align: left;}
+.saoyisao{margin-left: 4.166667%;}
+.propt-widow-2 .saoyisao{padding-bottom: 10px;}
+.propt-widow-2 .pro-form-item-chef .propt-form-info{padding-bottom: 0;}
