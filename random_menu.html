@@ -82,11 +82,12 @@
         </div>
         <script>
             var arrMenu = ["嘉禾一品","美女肉饼","炒菜","水饺","拉面","开发一家"];
+			var arrMenu1 = ["哈尔滨","红肠","猪头","菜刀","崔儿","。。。。。"];
             function fnRandom(){
                 return 3600 - 360 + Math.random() * 720;
             }
             $(".box div").each(function(k,v){
-                $(this).html(arrMenu[k]);
+                $(this).html(arrMenu1[k]);
             });
             var ranA = 0;
             var ranB = 0;
