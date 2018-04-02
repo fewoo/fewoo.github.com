@@ -14,7 +14,8 @@
     <button style="margin-top:10px;width:50px;height:30px;font-size:14px;">上传</button>
     <br>
     <img src="" alt="" id="img1" style="width:200px;height:100px;margin-top:10px;">
-    <iframe src="" frameborder="0" width=300 height=200 style="margin-top:10px;"></iframe>
+    <!-- <iframe src="" frameborder="0" width=300 height=200 style="margin-top:10px;"></iframe> -->
+    <div sytle="width:500px;"></div>
 
     
     <script>
@@ -35,7 +36,8 @@
         };
         reader_video.onload=function(e) {  
           imgFile2 = e.target.result;
-          $("iframe").attr("src",imgFile2);
+          // $("iframe").attr("src",imgFile2);
+          $("div").html(imgFile2);
         };
       });
   
