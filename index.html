@@ -10,21 +10,32 @@
 <body>
     <input type="file" accept="image/*" capture="camera" id="imageU">
     <input type="file" accept="video/*" capture="camcorder"  id="videoU">
+    <br>
+    <button style="margin-top:10px;width:50px;height:30px;font-size:14px;">上传</button>
+    <br>
+    <img src="" alt="" id="img1" style="width:200px;height:100px;margin-top:10px;">
+    <iframe src="" frameborder="0" width=300 height=200 style="margin-top:10px;"></iframe>
 
-    <div></div>
-    <div></div>
-
-    <button>上传</button>
+    
     <script>
       $("button").click(function(){
-        $("div").html($("#imageU").files[0]);
-
-        var file = $("#imageU").files[0];
-        var reader = new FileReader();
-        var imgFile;
-        reader.onload=function(e) {  
-          imgFile = e.target.result;  
-          $("div").html(imgFile);
+        // $("div").html($("#imageU").files[0]);
+        var file_image = $("#imageU").prop("files")[0];
+        var file_video = $("#videoU").prop("files")[0];
+        console.log(file_video);
+        // var file = $("#imageU").find("input")[0].files[0];
+        var reader_image = new FileReader();
+        var reader_video = new FileReader();
+        reader_image.readAsDataURL(file_image);
+        reader_video.readAsDataURL(file_video);
+        var imgFile1,imgFile2;
+        reader_image.onload=function(e) {  
+          imgFile1 = e.target.result;  
+          $("#img1").attr("src",imgFile1);
+        };
+        reader_video.onload=function(e) {  
+          imgFile2 = e.target.result;
+          $("iframe").attr("src",imgFile2);
         };
       });
   
