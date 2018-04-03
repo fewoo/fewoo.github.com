@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <input type="file" accept="image/*" capture="camera" id="imageU">
+    <input type="file" accept="video/*" capture="camcorder"  id="videoU">
+    <br>
+    <button style="margin-top:10px;width:50px;height:30px;font-size:14px;">上传</button>
+    <br>
+    <img src="" alt="" id="img1" style="width:200px;height:100px;margin-top:10px;">
+    <!-- <iframe src="" frameborder="0" width=300 height=200 style="margin-top:10px;"></iframe> -->
+    <div sytle="width:500px;"></div>
+
+    
+    <script>
+      $("button").click(function(){
+        // $("div").html($("#imageU").files[0]);
+        var file_image = $("#imageU").prop("files")[0];
+        var file_video = $("#videoU").prop("files")[0];
+        console.log(file_video);
+        // var file = $("#imageU").find("input")[0].files[0];
+        var reader_image = new FileReader();
+        var reader_video = new FileReader();
+        reader_image.readAsDataURL(file_image);
+        reader_video.readAsDataURL(file_video);
+        var imgFile1,imgFile2;
+        reader_image.onload=function(e) {  
+          imgFile1 = e.target.result;  
+          $("#img1").attr("src",imgFile1);
+        };
+        reader_video.onload=function(e) {  
+          imgFile2 = e.target.result;
+          // $("iframe").attr("src",imgFile2);
+          $("div").html(imgFile2);
+        };
+      });
+  
+    //正式读取文件  
+    // reader.readAsDataURL(file);  
+    </script>
+</body>
+</html>
